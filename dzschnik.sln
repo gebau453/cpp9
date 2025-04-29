@@ -1,31 +1,91 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 17
-VisualStudioVersion = 17.13.35825.156 d17.13
-MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "dzschnik", "dzschnik.vcxproj", "{EEFF056A-DC17-4B29-98AA-479F1DB94AFA}"
-EndProject
-Global
-	GlobalSection(SolutionConfigurationPlatforms) = preSolution
-		Debug|x64 = Debug|x64
-		Debug|x86 = Debug|x86
-		Release|x64 = Release|x64
-		Release|x86 = Release|x86
-	EndGlobalSection
-	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{EEFF056A-DC17-4B29-98AA-479F1DB94AFA}.Debug|x64.ActiveCfg = Debug|x64
-		{EEFF056A-DC17-4B29-98AA-479F1DB94AFA}.Debug|x64.Build.0 = Debug|x64
-		{EEFF056A-DC17-4B29-98AA-479F1DB94AFA}.Debug|x86.ActiveCfg = Debug|Win32
-		{EEFF056A-DC17-4B29-98AA-479F1DB94AFA}.Debug|x86.Build.0 = Debug|Win32
-		{EEFF056A-DC17-4B29-98AA-479F1DB94AFA}.Release|x64.ActiveCfg = Release|x64
-		{EEFF056A-DC17-4B29-98AA-479F1DB94AFA}.Release|x64.Build.0 = Release|x64
-		{EEFF056A-DC17-4B29-98AA-479F1DB94AFA}.Release|x86.ActiveCfg = Release|Win32
-		{EEFF056A-DC17-4B29-98AA-479F1DB94AFA}.Release|x86.Build.0 = Release|Win32
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {C9916CB5-B60E-4E52-B90D-2969C5398613}
-	EndGlobalSection
-EndGlobal
+//1. Від 1 до n
+//#include <iostream>
+//using namespace std;
+//
+//void print1toN(int n, int current = 1) {
+//    if (current > n) return;
+//    cout << current << " ";
+//    print1toN(n, current + 1);
+//}
+
+//2. Від A до B
+//#include <iostream>
+//using namespace std;
+//
+//void printAtoB(int a, int b) {
+//    cout << a << " ";
+//    if (a == b) return;
+//    if (a < b) printAtoB(a + 1, b);
+//    else printAtoB(a - 1, b);
+//}
+
+//Точна ступінь двійки
+//#include <iostream>
+//using namespace std;
+//
+//bool isPowerOfTwo(int n) {
+//    if (n == 1) return true;
+//    if (n % 2 != 0 || n == 0) return false;
+//    return isPowerOfTwo(n / 2);
+//}
+
+
+
+//4. Сума цифр числа
+
+//#include <iostream>
+//using namespace std;
+//
+//int sumOfDigits(int n) {
+//    if (n == 0) return 0;
+//    return n % 10 + sumOfDigits(n / 10);
+//}
+
+//5. Цифри числа справа наліво
+
+//#include <iostream>
+//using namespace std;
+//
+//void printDigitsReversed(int n) {
+//    if (n == 0) return;
+//    cout << n % 10 << " ";
+//    printDigitsReversed(n / 10);
+//}
+
+
+//6. Цифри числа зліва направо
+
+//#include <iostream>
+//using namespace std;
+//
+//void printDigitsLeftToRight(int n) {
+//    if (n < 10) {
+//        cout << n << " ";
+//        return;
+//    }
+//    printDigitsLeftToRight(n / 10);
+//    cout << n % 10 << " ";
+//}
+
+//7. Реверс числа
+
+//#include <iostream>
+//using namespace std;
+//
+//int reverseNumber(int n, int rev = 0) {
+//    if (n == 0) return rev;
+//    return reverseNumber(n / 10, rev * 10 + n % 10);
+//}
+
+//9. Числа Фібоначчі
+
+//#include <iostream>
+//using namespace std;
+//
+//int fibonacci(int n) {
+//    if (n == 0) return 0;
+//    if (n == 1) return 1;
+//    return fibonacci(n - 1) + fibonacci(n - 2);
+//}
+
